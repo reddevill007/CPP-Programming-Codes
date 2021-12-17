@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        background: #000;
+        color: #fff;
+    }
+
+    dfn {
+        color: pink;
+    }
+
+    var {
+        color: brown;
+    }
+
+    cite {
+        color: green;
+    }
+
+    KBD {
+        font-style: normal;
+        color: #600030;
+    }
+</style>
+
+<body>
+    <table class="snippet">
+        <tbody>
+            <tr>
+                <td class="rownum">
+                    <pre><code>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24<br>25<br></code></pre>
+                </td>
+                <td class="source">
+                    <pre><code><cite>// vector assign</cite>
+        <dfn>#include &lt;iostream&gt;</dfn>
+        <dfn>#include &lt;vector&gt;</dfn>
+        
+        <var>int</var> main ()
+        {
+          std::vector&lt;<var>int</var>&gt; first;
+          std::vector&lt;<var>int</var>&gt; second;
+          std::vector&lt;<var>int</var>&gt; third;
+        
+          first.assign (7,100);             <cite>// 7 ints with a value of 100</cite>
+        
+          std::vector&lt;<var>int</var>&gt;::iterator it;
+          it=first.begin()+1;
+        
+          second.assign (it,first.end()-1); <cite>// the 5 central values of first</cite>
+        
+          <var>int</var> myints[] = {1776,7,4};
+          third.assign (myints,myints+3);   <cite>// assigning from array.</cite>
+        
+          std::cout &lt;&lt; <kbd>"Size of first: "</kbd> &lt;&lt; <var>int</var> (first.size()) &lt;&lt; <kbd>'\n'</kbd>;
+          std::cout &lt;&lt; <kbd>"Size of second: "</kbd> &lt;&lt; <var>int</var> (second.size()) &lt;&lt; <kbd>'\n'</kbd>;
+          std::cout &lt;&lt; <kbd>"Size of third: "</kbd> &lt;&lt; <var>int</var> (third.size()) &lt;&lt; <kbd>'\n'</kbd>;
+          <var>return</var> 0;
+        }</code></pre></td>
+        </tbody>
+    </table>
+    <script>
+        SyntaxHighlighter.all()
+    </script>
+</body>
+
+</html>
